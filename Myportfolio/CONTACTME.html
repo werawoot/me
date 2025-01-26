@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #f0f0f0, #d9d9d9);
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .contact-container {
+            max-width: 700px;
+            text-align: center;
+            padding: 50px;
+        }
+        .contact-header {
+            font-size: 36px;
+            font-weight: 700;
+            text-transform: uppercase;
+            border: 3px solid #000;
+            padding: 15px;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+        .contact-container p {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 30px;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: none;
+            border-bottom: 2px solid #000;
+            font-size: 16px;
+            outline: none;
+            background: transparent;
+        }
+        .contact-form textarea {
+            height: 150px;
+            resize: none;
+        }
+        .submit-btn, .btn-back {
+            background: transparent;
+            color: #000;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            border-bottom: 2px solid #000;
+            padding: 10px 0;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: all 0.3s ease-in-out;
+            display: block;
+            width: 100%;
+            margin-top: 20px;
+        }
+        .submit-btn:hover, .btn-back:hover {
+            color: #555;
+            border-bottom: 2px solid #555;
+        }
+        .btn-back {
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="contact-container">
+        <div class="contact-header">CONTACT</div>
+        <p>Nulla in velit a metus rhoncus tempus. Nulla congue nulla vel sem varius finibus.</p>
+        <form class="contact-form">
+            <input type="text" placeholder="Enter your name*" required>
+            <input type="email" placeholder="Enter your email*" required>
+            <input type="text" placeholder="Phone number">
+            <textarea placeholder="Your message*" required></textarea>
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+        <a href="Main.html" class="btn-back">Back to Home</a>
+    </div>
+</body>
+</html>

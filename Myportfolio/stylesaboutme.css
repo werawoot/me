@@ -1,0 +1,133 @@
+/* ตั้งค่าพื้นฐานของเว็บเพจ */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #f0f0f0, #d9d9d9);
+    color: #333;
+}
+
+/* คอนเทนเนอร์หลัก */
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 50px;
+    padding: 50px;
+}
+
+/* ข้อมูลส่วนเนื้อหา */
+.about-content {
+    max-width: 600px;
+    text-align: center;
+}
+
+.about-content h1 {
+    font-size: 42px;
+    font-weight: 700;
+    color: #000;
+    border-bottom: 3px solid #000000;
+    display: inline-block;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.about-content p {
+    font-size: 22px;
+    line-height: 1.8;
+    color: #555;
+}
+
+.about-content .highlight {
+    color: #000000;
+    font-weight: 600;
+}
+
+/* ปุ่มกลับหน้าแรก */
+.btn-back {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 15px 40px;
+    background: #000000;
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    border: 2px solid #040608;
+}
+
+.btn-back:hover {
+    background: #fff;
+    color: #000000;
+    border: 2px solid #000000;
+    transform: translateY(-3px);
+}
+
+/* ส่วนรูปภาพ */
+.about-image img {
+    max-width: 400px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+/* การตอบสนองต่อหน้าจอขนาดเล็ก */
+@media (max-width: 1024px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-content {
+        max-width: 90%;
+    }
+
+    .about-image img {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-content h1 {
+        font-size: 36px;
+    }
+
+    .about-content p {
+        font-size: 20px;
+    }
+
+    .btn-back {
+        padding: 12px 30px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-content h1 {
+        font-size: 30px;
+    }
+
+    .about-content p {
+        font-size: 18px;
+    }
+
+    .about-image img {
+        max-width: 90%;
+    }
+}
+
+/* แอนิเมชัน fade-in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
